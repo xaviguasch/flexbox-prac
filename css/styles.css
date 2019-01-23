@@ -6,15 +6,52 @@ Mid: #5aaa9d
 */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-html, body {
-    color: #444;
-    font-family: Roboto;
-    padding: 100px;
+body {
+    align-items: center;
     background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+    color: #444;
+    display: flex;
+    font-family: Roboto;
     height: 100vh;
+    justify-content: center;
+    padding: 50px;
+}
+
+.pizza {
+    align-items: stretch;
+    border-radius: 4px;
+    box-shadow: 0 30px 80px 10px rgba(0, 0, 0, .2);
+    display: flex;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.pizza__hero {
+    flex: 0 0 45%;
+}
+
+.pizza__img {
+    display: block;
+    width: 100%;
+}
+
+.pizza__content {
+    background: #FFF;
+    flex: 1;
+}
+
+.pizza__price {
+    align-items: center;
+    background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+    color: #fff;
+    display: flex;
+    flex: 0 0 50px;
+    font-size: 18px;
+    justify-content: center;
+    writing-mode: vertical-rl;
 }
